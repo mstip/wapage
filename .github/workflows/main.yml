@@ -25,3 +25,5 @@ jobs:
         username: wolkeny_0
         password: ${{ secrets.ftppassword }}
         local-dir: ./dist/
+        protocol: ftps
+        port: 21
