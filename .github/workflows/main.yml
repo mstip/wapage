@@ -24,4 +24,4 @@ jobs:
         server: www555.your-server.de
         username: wolkeny_0
         password: ${{ secrets.ftppassword }}
-        local-dir: /dist/
+        local-dir: ./dist/
