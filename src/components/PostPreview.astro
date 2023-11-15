@@ -1,0 +1,36 @@
+---
+interface Props {
+	title: string;
+	date: string;
+    text:string;
+    img:string;
+    link:string;
+}
+
+const { title,date, text,img,link } = Astro.props;
+---
+<article>
+    <div class="imgcontainer">
+        <img src={img} alt="" srcset="" />
+    </div>
+    <hgroup>
+        <h3>{title}</h3>
+        <h6>{date}</h6>
+    </hgroup>
+    <p>
+        {text}
+    </p>
+    <a href={link}>lesen</a>
+</article>
+
+<style>
+    .imgcontainer {
+        text-align: center;
+        margin-bottom: 0.5rem;
+        
+    }
+    img {
+        object-fit: contain;
+        height: 13rem;
+    }
+</style>

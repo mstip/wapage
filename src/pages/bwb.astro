@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc Stipcevic</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+    font-size: 12px;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    width:90%;
+}
+
+.head-l {
+    flex: 2 1 0;
+}
+
+.head-r {
+    flex: 1 1 0;
+}
+
+.head-r img {
+    border-radius: 50%;
+    height: 20rem;
+    position: absolute;
+    top:2rem;
+    right:5%;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.col-l {
+    flex: 2 1 0;
+    border-right: 1px solid black;
+    padding-right: 2rem;
+}
+
+.col-r {
+    flex: 3 1 0;
+}
+table {
+    width: 100%;
+}
+
+hr {
+    width:80%;
+}
+
+td.first {
+    font-weight: bolder;
+}
+
+.divider {
+    border-top: 1px solid black;
+    margin: 1.5rem;
+}
+
+td {
+    height:1.5rem;
+}
+
+li{
+    height:1.5rem;
+}
+
+.webview{
+    display: none;
+}
+
+@media print {
+    .webview{
+        display: block;
+        font-size: 8px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <a class="webview" href="https://wolken-antrieb.de/bwb">Webansicht</a>
+    <div class="head">
+        <div class="head-l">
+            <h1>Marc Stipcevic</h1>
+            <h2>Software Architekt & Fullstack Webentwickler</h2>
+        </div>
+        <div class="head-r">
+            <img src="/bwb/marc.png" alt="" srcset="">
+        </div>
+    </div>
+    <div class="main">
+        <div class="col-l">
+            <h2>Persönliches</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="first">Familienstand</td>
+                        <td>verheiratet, 3 Kinder</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Geboren</td>
+                        <td>21.3.89 in Karlsruhe</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Mail</td>
+                        <td>marcstipcevic@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Telefon</td>
+                        <td>+49 176 74708604</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Anschrift</td>
+                        <td>Lore-Kullmer-Str. 95 93053 Regensburg</td>
+                    </tr>
+                </tbody>
+            </table>
+         
+            <div class="divider"></div>
+            <h2>Sprachen</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="first">Deutsch</td>
+                        <td>Muttersprache</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Englisch</td>
+                        <td>Verhandlungssicher</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="divider"></div>
+            <h2>Fachkompetenzen</h2>
+            <ul>
+                <li>Cross-Plattform Webentwicklung</li>
+                <li>Softwarearchitektur</li>
+                <li>Cloud & DevOps</li>
+                <li>Leadership</li>
+                <li>Projektmanagement</li>
+                <li>Agile Entwicklung</li>
+            </ul>
+            <h2>persönliche Stärken</h2>
+            <ul>
+                <li>Unternehmer & Macher</li>
+                <li>Kommunikation</li>
+                <li>hohe Belastbarkeit</li>
+                <li>schnelle Auffassungsgabe</li>
+                <li>analytisches Denken</li>
+            </ul>
+            <div class="divider"></div>
+            <h2>Tech</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="first">Expertise</td>
+                        <td>Fullstack Webentwicklung, Cloud & DevOps</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Sprachen</td>
+                        <td>Javascript, Typescript, Go, PHP, Python, C#</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Web</td>
+                        <td>HTML, CSS, SVG, SAAS</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Web Frameworks</td>
+                        <td>Angular, Vue, React</td>
+                    </tr>
+                    <tr>
+                        <td class="first">CSS Frameworks</td>
+                        <td>Bootstrap, Tailwind, Semantic UI</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Backend Frameworks</td>
+                        <td>Express, fastify, NestJS, Laravel, Symfony, Flask</td>
+                    </tr>
+               
+                    <tr>
+                        <td class="first">Mobile Web</td>
+                        <td>Ionic, Cordova, React Native</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Desktop Web</td>
+                        <td>Electron, PWA</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Tests</td>
+                        <td>Cypress, Playwright, Karma, Jest, Mocha</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Design & Mockups</td>
+                        <td>Figma, Adobe XD, Gimp</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Datenbanken</td>
+                        <td>Postgres, Mysql, SQLite, Redis, Mongodb</td>
+                    </tr>
+                    <tr>
+                        <td class="first">DevOps</td>
+                        <td>docker, k8s, CICD: github actions & azure pipelines</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Linux</td>
+                        <td>Ubuntu, Debian, Centos, Fedora, Alpine</td>
+                    </tr>
+                    <tr>
+                        <td class="first">Cloud Plattformen</td>
+                        <td>Firebase, Azure, AWS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-r">
+            <h2>Berufserfahrung</h2>
+            <h3>Projektmitarbeiter & technischer Spezialist</h3>
+            <p>technische Hochschule Deggendorf | 03/2023 - heute</p>
+            <ul>
+                <li>nebenberufliche Projektmitarbeit im Projekt: rAIse - Creating AI mindesets</li>
+                <li>Projekt-Ansprechpartner</li>
+                <li>Betreuung der Webplattform https://raise-ai-mindsets.de/</li>
+            </ul>
+            <div class="divider"></div>
+
+            <h3>freiberufliche Berater</h3>
+            <p>06/2022 - heute</p>
+            <ul>
+                <li>Digitalisierung & digitale Transformation</li>
+                <li>Design Thinking & Lean Startup</li>
+                <li>agile Softwareentwicklung</li>
+            </ul>
+            <div class="divider"></div>
+
+            <h3>Head of Solutions & New Games Operations Lead</h3>
+            <p>Travian Games GmbH München | 03/2021 - heute</p>
+            <ul>
+                <li>Verantwortung für Entwicklung und Betrieb der Business-Services</li>
+                <li>Disziplinarische und fachliche Führung des Solutions Teams</li>
+                <li>Migration der OnPremise Infrastruktur nach AWS</li>
+                <li>Einführung von DevOps & Site reliability Methoden</li>
+                <li>Aufbau der R&D Abteilung: New Games Mobile</li>
+            </ul>
+            <div class="divider"></div>
+       
+            <h3>Softwareentwickler & DevOps Engineer</h3>
+            <p>edoc solutions ag | 05/2017 - 03/2021</p>
+            <ul>   
+                <li>Fullstack Entwicklung der invoice-app</li>
+                <li>Product Owner und Entwickler der internen DevOps Plattform</li>
+                <li>Entwicklung und Betreuung der Cloud und OnPrem Infrastruktur</li>
+                <li>Beratung und Unterstützung der Kunden bei Einführung und Betrieb der invoice-app</li>
+                <li>fachliche Führung der Entwickler</li>
+            </ul>
+            <div class="divider"></div>
+            <h3>Softwareentwickler</h3>
+            <p>Billiger.de - solute GmbH Karlsruhe | 09/2014 - 05/2017</p>
+            <ul>
+                <li>Webentwickler im Projekt zur Neuentwicklung des internen CMS Systems</li>
+                <li>Entwicklung eines internen Webframeworks</li>
+                <li>Verantwortlicher für die Modernisierung der internen Business-Services</li>
+                <li>Projektmanager und Entwickler Neuentwicklung B2B Portal</li>
+                <li>Betreuung von Azubis und Werksstudenten</li>
+            </ul>
+            <div class="divider"></div>
+            <h3>Infrastructure Manager</h3>
+            <p>Conject AG München | 07/2013 - 09/2014</p>
+            <ul>
+                <li>Verantwortlicher für den Betrieb der Webplattform</li>
+                <li>Betreuung der Office-IT am Standort München</li>
+            </ul>
+            <div class="divider"></div>
+            <h3>Softwareentwickler</h3>
+            <p>Media-Concept Bürobedarf GmbH München | 08/2012 - 07/2013</p>
+            <ul>
+                <li>Weiterentwicklung des Warenwirtschaftssystems</li>
+                <li>Entwicklung der B2B-Plattform</li>
+            </ul>
+            <div class="divider"></div>
+            <h3>Softwareentwickler</h3>
+            <p>Bruker Optik GmbH Ettlingen | 03/2010 - 08/2012</p>
+            <ul>
+                <li>Entwicklung einer Webplattform zur Verwaltung von Messgeräten und Messdaten</li>
+            </ul>
+            <div class="divider"></div>
+            <h3>Zivildienst als Webentwickler</h3>
+            <p>AWO Nordschwarzwald Pforzheim | 11/2008 - 09/2009</p>
+            <ul>
+                <li>Entwicklung und Betrieb der Webanwendung "Essen auf Rädern"</li>
+            </ul>
+            <div class="divider"></div>
+            <h2>Ausbildung</h2>
+            <h3>Informatikkaufmann </h3>
+            <p>Bardusch Gmbh Co. KG Ettlingen | 2005-2008</p>
+        </div>
+    </div>
+</body>
+
+</html>

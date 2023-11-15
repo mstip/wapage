@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PostPreview from "../components/PostPreview.astro";
+
+import { getCollection, getEntry } from "astro:content";
+
+const allBlogPosts = await getCollection("blog");
+---
+
+<Layout title="blog">
+    <main class="container">
+        <h1 class="heading">Wolkenblog</h1>
+        <hr />
+        {
+            allBlogPosts.map((post) => (
+                <PostPreview
+                    title={post.data.title}
+                    text={post.data.description}
+                    date={post.data.pubDate}
+                    img={post.data.img}
+                    link={"/posts/" + post.slug}
+                />
+            ))
+        }
+    </main>
+</Layout>
+
+<style>
+    :root {
+        --spacing: 0.5rem;
+        --typography-spacing-vertical: 1rem;
+    }
+
+    .heading {
+        font-size: 3.5rem;
+        text-align: center;
+        margin: 0;
+    }
+</style>

@@ -1,0 +1,38 @@
+---
+import Layout from "./Layout.astro";
+const { title, pubDate, text, img, link } = Astro.props.frontmatter;
+---
+
+<Layout title="blog">
+    <main class="container">
+        <article>
+            <header>
+            <div class="imgcontainer">
+                <img src={img} alt="" srcset="" />
+            </div>
+            <hgroup>
+                <h3>{title}</h3>
+                <h6>{pubDate}</h6>
+            </hgroup>
+        </header>
+            <p>
+                <slot />
+            </p>
+        </article>
+    </main>
+</Layout>
+
+<style>
+    .imgcontainer {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    img {
+        object-fit: contain;
+        height: 13rem;
+    }
+    :root {
+        --spacing: 0.5rem;
+        --typography-spacing-vertical: 1rem;
+    }
+</style>
